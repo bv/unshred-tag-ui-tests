@@ -1,0 +1,5 @@
+<% unshred_common = "-r features" %>
+<% progress = "--format progress" %>
+unshred_local: <%= unshred_common %>
+
+unshred_on_travis_ci: <%= unshred_common %> <%= progress %>
