@@ -18,7 +18,6 @@ class Unshred::Tag::PageObject
 
   def await(options={})
     awaiting_error = "The awaited '#{self.class}' is not present by #{trait}."
-
     raise awaiting_error unless page.has_xpath? trait, options
     self
   end
